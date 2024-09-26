@@ -2,27 +2,27 @@ package main
 
 import "fmt"
 
-func add(x int, y int) (sum int){
+func add(x int, y int) (sum int) {
 	sum = x + y
 	return
 }
 
-func swap(str1 , str2 string) (string, string){
+func swap(str1, str2 string) (string, string) {
 	return str2, str1
 }
 
-func divide(x, y int) (int, int){
+func divide(x, y int) (int, int) {
 	return x / y, x % y
 }
 
-func main(){
+func main() {
 	fmt.Println(add(1, 2))
 	fmt.Println(swap("hello", "world"))
 	fmt.Println(divide(10, 5))
-	q, _ := divide(10, 3)
-	
-}
+	q, w := divide(10, 3)
+	fmt.Println(q, w)
 
+}
 
 // How do you define a function with multiple return values in Go?
 // by listting them after parameters in ()

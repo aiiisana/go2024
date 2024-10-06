@@ -1,24 +1,22 @@
 package main
 
-import "fmt"
-
-//encapsulation
-type Person struct{
-	name string
+// encapsulation
+type Person struct {
+	name    string
 	faculty string
-	age int
+	age     int
 }
 
-//constructor with setters
-func newPerson(name, faculty string, age int){
+// constructor with setters
+func newPerson(name, faculty string, age int) {
 	return &Person{
-		name: name,
+		name:    name,
 		faculty: faculty,
-		age: age,
+		age:     age,
 	}
 }
 
-//getters
+// getters
 func (p *Person) GetName() string {
 	return p.name
 }
@@ -31,13 +29,10 @@ func (p *Person) GetAge() int {
 	return p.age
 }
 
-//inheritance
-type Student struct{
+// inheritance
+type Student struct {
 	Person
 	year int
 }
-fj
 
-
-
-func main(){}
+func main() {}

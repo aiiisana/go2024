@@ -21,12 +21,12 @@ type User struct {
 }
 
 func initDB() (*sql.DB, error) {
-	connStr := "user=username password=password dbname=mydb sslmode=disable"
+	connStr := "user=aiiisana password=mypassword dbname=mydb sslmode=disable"
 	return sql.Open("postgres", connStr)
 }
 
 func initGORM() (*gorm.DB, error) {
-	dsn := "user=username password=password dbname=mydb sslmode=disable"
+	dsn := "user=aiiisana password=mypassword dbname=mydb sslmode=disable"
 	return gorm.Open(postgres.Open(dsn), &gorm.Config{})
 }
 

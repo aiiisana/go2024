@@ -58,6 +58,6 @@ func main() {
 
 	createTable(db)
 	// insertUsers(db, "John Doe", 30)
-	insertUsers(db, "Aisana", 18)
+	//insertUsers(db, "Aisana", 18)
 	printUsers(db)
 }

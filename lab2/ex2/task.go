@@ -25,7 +25,7 @@ func main() {
 		panic(err)
 	}
 
-	insertUser(db, "Aisana", 19)
+	//insertUser(db, "Aisana", 19)
 	//insertUser(db, "Amir", 27)
 
 	getUsers(db)

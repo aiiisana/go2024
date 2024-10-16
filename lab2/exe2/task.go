@@ -57,11 +57,11 @@ func autoMigrate(db *gorm.DB) {
 
 func insertUserWithProfile(db *gorm.DB) {
 	user := User{
-		Name: "John Doe",
-		Age:  30,
+		Name: "Asap",
+		Age:  28,
 		Profile: Profile{
-			Bio:               "Software developer",
-			ProfilePictureURL: "http://example.com/johndoe.jpg",
+			Bio:               "Software engineer",
+			ProfilePictureURL: "http://example.com/janedoe.jpg",
 		},
 	}
 
@@ -122,7 +122,7 @@ func main() {
 
 	queryUserWithProfile(db)
 
-	updateUserProfile(db, 1, "Updated Bio", "http://example.com/updated.jpg")
+	updateUserProfile(db, 13, "Updated Bio", "http://example.com/updated.jpg")
 
-	deleteUserWithProfile(db, 1)
+	deleteUserWithProfile(db, 13)
 }
